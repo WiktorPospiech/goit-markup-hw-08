@@ -1,0 +1,116 @@
+.footer {
+  background: $introductionBackgroundColor;
+  &__wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+  &__contacts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: 70px;
+  }
+  &__socialmedia {
+    padding-top: 72px;
+    margin-right: 78px;
+  }
+
+  &__socialmedia-list {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+    fill: $backgroundThird;
+  }
+  &__socialmedia-tem {
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__socialmedia-tem:hover,
+  &__socialmedia-tem:focus {
+    background-color: $brandColor;
+  }
+  &__socialmedia-header {
+    color: $backgroundThird;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    padding-bottom: 10px;
+  }
+}
+
+.address {
+  margin-top: 20px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  &__item {
+    font-style: normal;
+    line-height: 1.7;
+    color: $backgroundThird;
+  }
+  &__link {
+    font-style: normal;
+    font-family: $fontPrimary;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:focus,
+  &__link:hover {
+    color: $brandColor;
+    fill: $brandColor;
+  }
+}
+
+.newsletter {
+  &__header {
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: $backgroundThird;
+  }
+  &__subscription {
+    display: flex;
+  }
+  &__input {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    padding: 15px 16px 15px 16px;
+    border: 1px solid #ffffff4d;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    color: #ffffff99;
+    background-color: $introductionBackgroundColor;
+    width: 358px;
+  }
+  &__button {
+    padding: 10px 28px 10px 42px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    color: $backgroundThird;
+    background-color: $brandColor;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    border-radius: 4px;
+  }
+  &__icon {
+    margin-left: 24px;
+    fill: rgba(255, 255, 255, 1);
+    background-color: $brandColor;
+  }
+}

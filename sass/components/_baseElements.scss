@@ -1,0 +1,19 @@
+.section {
+  padding: 94px 0;
+  &__header {
+    text-align: center;
+    color: $fontMAINcolor;
+    font-weight: 700;
+    font-size: $h2fontSize;
+    line-height: 1.2;
+    padding-bottom: 50px;
+  }
+  &--no-padding {
+    padding-top: 0;
+  }
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}

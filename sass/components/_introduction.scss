@@ -1,0 +1,39 @@
+.introduction {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $introductionBackgroundColor;
+  border: 1px solid #000;
+  &__img {
+    margin: auto;
+    background-image: url(../images/sloganBackground.jpg),
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+  }
+  &__wrapper {
+    padding: 200px 452px;
+    text-align: center;
+  }
+  &__slogan {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    color: $backgroundThird;
+    padding-bottom: 30px;
+  }
+  &__button {
+    border: none;
+    font-family: $fontPrimary;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: $backgroundThird;
+    background-color: $brandColor;
+    padding: 10px 41px 10px 42px;
+  }
+}
