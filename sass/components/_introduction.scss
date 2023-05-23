@@ -1,25 +1,28 @@
 .introduction {
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: $introductionBackgroundColor;
+  padding-top: 0px;
+  padding-bottom: 0px;
   border: 1px solid #000;
+  background-color: $introductionBackgroundColor;
   &__img {
     margin: auto;
-    background-image: url(../images/sloganBackground.jpg),
-      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/HeaderImg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
   }
   &__wrapper {
-    padding: 200px 452px;
+    padding: 118px 57px;
     text-align: center;
   }
   &__slogan {
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 1.4;
+    line-height: 42px;
     letter-spacing: 0.06em;
     color: $backgroundThird;
     padding-bottom: 30px;
@@ -35,5 +38,13 @@
     color: $backgroundThird;
     background-color: $brandColor;
     padding: 10px 41px 10px 42px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .introduction__wrapper {
+    padding: 200px 452px;
+  }
+  .introduction__slogan {
+    font-size: 44px;
   }
 }
