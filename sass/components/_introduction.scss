@@ -1,6 +1,5 @@
 .introduction {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0;
   border: 1px solid #000;
   background-color: $introductionBackgroundColor;
   &__img {
@@ -22,7 +21,7 @@
   &__slogan {
     font-size: 26px;
     font-weight: 900;
-    line-height: 42px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     color: $backgroundThird;
     padding-bottom: 30px;

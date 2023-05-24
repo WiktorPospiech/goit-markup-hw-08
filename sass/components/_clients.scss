@@ -1,5 +1,26 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  fill: $iconsFilling;
+  gap: 30px;
+}
+.clients__icon {
+  border: 1px solid $iconsFilling;
+  width: 210px;
+  height: 92px;
+  border-radius: 4%;
+  padding: 16px 52px;
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $brandColor;
+    border: 1px solid $brandColor;
+  }
+}
+/* .clients__list {
+  display: flex;
   justify-content: space-between;
   fill: $iconsFilling;
   gap: 30px;
@@ -17,3 +38,4 @@
     border: 1px solid $brandColor;
   }
 }
+ */

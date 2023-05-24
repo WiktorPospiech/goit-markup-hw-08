@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!--<link rel="stylesheet" href="./css/modern-normalize.css" /> -->
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -52,7 +52,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts">
+        <ul class="contacts contacts--hidden">
           <li>
             <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16px" height="12px">
@@ -85,6 +85,7 @@
         </div>
       </section>
       <!--introduction-->
+
       <!--advantages-->
       <section class="section">
         <div class="container">
@@ -133,7 +134,9 @@
         </div>
       </section>
       <!--advantages-->
-      <section class="section section--no-padding">
+
+      <!--ourService-->
+      <section class="section section--no-padding section--hidden">
         <div class="container">
           <h2 class="section__header">Czym się zajmujemy</h2>
           <ul class="OurService__list">
@@ -170,19 +173,26 @@
           </ul>
         </div>
       </section>
+      <!--ourService-->
+
+      <!--ourTeam-->
       <section class="team section">
         <div class="container">
           <h2 class="section__header">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team__item">
               <img
-                src="images/ChristopherWalker.jpg"
-                alt="Christopher Walker"
-                width="270"
-                height="260"
+                alt="ChristopherWalker"
+                src="./images/KylieEvans.jpg"
+                srcset="
+                  ./images/ChristopherWalker.jpg     450w,
+                  ./images/ChristopherWalker@2x.jpg  900w,
+                  ./images/ChristopherWalker@3x.jpg 1350w
+                "
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
               />
               <h3 class="team__header">Christopher Walker</h3>
-              <p class="team__p">Product Designer</p>
+              <p class="team__text">Product Designer</p>
               <div class="team__socialmediaIcons">
                 <ul class="team__socialmediaIcons__list">
                   <li class="team__socialmediaIcons__item">
@@ -210,13 +220,17 @@
             </li>
             <li class="team__item">
               <img
-                src="images/KylieEvans.jpg"
                 alt="Kylie Evans"
-                width="270"
-                height="260"
+                src="./images/KylieEvans.jpg"
+                srcset="
+                  ./images/KylieEvans.jpg     450w,
+                  ./images/KylieEvans@2x.jpg  900w,
+                  ./images/KylieEvans@3x.jpg 1350w
+                "
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
               />
               <h3 class="team__header">Kylie Evans</h3>
-              <p class="team__p">Frontend Developer</p>
+              <p class="team__text">Frontend Developer</p>
               <div class="team__socialmediaIcons">
                 <ul class="team__socialmediaIcons__list">
                   <li class="team__socialmediaIcons__item">
@@ -244,13 +258,17 @@
             </li>
             <li class="team__item">
               <img
-                src="images/RyanHarris.jpg"
-                alt="Ryan Harris"
-                width="270"
-                height="260"
+                alt="RyanHarris"
+                src="./images/RyanHarris.jpg"
+                srcset="
+                  ./images/RyanHarris.jpg     450w,
+                  ./images/RyanHarris@2x.jpg  900w,
+                  ./images/RyanHarris@3x.jpg 1350w
+                "
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
               />
               <h3 class="team__header">Ryan Harris</h3>
-              <p class="team__p">Marketing</p>
+              <p class="team__text">Marketing</p>
               <div class="team__socialmediaIcons">
                 <ul class="team__socialmediaIcons__list">
                   <li class="team__socialmediaIcons__item">
@@ -278,13 +296,17 @@
             </li>
             <li class="team__item">
               <img
-                src="images/TylerMoore.jpg"
-                alt="Tyler Moore"
-                width="270"
-                height="260"
+                alt="TylerMoore"
+                src="./images/TylerMoore.jpg"
+                srcset="
+                  ./images/TylerMoore.jpg     450w,
+                  ./images/TylerMoore@2x.jpg  900w,
+                  ./images/TylerMoore@3x.jpg 1350w
+                "
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
               />
               <h3 class="team__header">Tyler Moore</h3>
-              <p class="team__p">UI Designer</p>
+              <p class="team__text">UI Designer</p>
               <div class="team__socialmediaIcons">
                 <ul class="team__socialmediaIcons__list">
                   <li class="team__socialmediaIcons__item">
@@ -313,6 +335,9 @@
           </ul>
         </div>
       </section>
+      <!--ourTeam-->
+
+      <!--clients-->
       <section class="section">
         <div class="container">
           <h2 class="section__header">Nasi klienci</h2>
@@ -350,6 +375,7 @@
           </ul>
         </div>
       </section>
+      <!--clients-->
     </main>
     <footer class="footer">
       <div class="container footer__wrapper">
@@ -381,22 +407,22 @@
         <div class="footer__socialmedia">
           <h3 class="footer__socialmedia-header">DOŁĄCZ DO NAS</h3>
           <ul class="footer__socialmedia-list">
-            <li class="footer__socialmedia-tem">
+            <li class="footer__socialmedia-item">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-instagram-2-1"></use>
               </svg>
             </li>
-            <li class="footer__socialmedia-tem">
+            <li class="footer__socialmedia-item">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-twitter-1-1"></use>
               </svg>
             </li>
-            <li class="footer__socialmedia-tem">
+            <li class="footer__socialmedia-item">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-facebook-1-1"></use>
               </svg>
             </li>
-            <li class="footer__socialmedia-tem">
+            <li class="footer__socialmedia-item">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-linkedin-1-1"></use>
               </svg>

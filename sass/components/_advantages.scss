@@ -1,7 +1,5 @@
 .advantages {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
   flex-direction: column;
   justify-content: space-between;
   &__item {
@@ -17,6 +15,7 @@
   &__text {
     text-align: left;
     line-height: 1.7;
+    padding-bottom: 25px;
   }
   &__icon {
     background-color: #f5f4fa;

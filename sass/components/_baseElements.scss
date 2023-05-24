@@ -1,4 +1,27 @@
 .section {
+  padding: 60px 15px;
+  &__header {
+    text-align: center;
+    color: $fontMAINcolor;
+    font-weight: 700;
+    font-size: $h2fontSize;
+    line-height: 1.2;
+    padding-bottom: 30px;
+  }
+  &--no-padding {
+    padding-top: 0;
+  }
+  &--zero-LRpadding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* .section {
   padding: 94px 0;
   &__header {
     text-align: center;
@@ -17,3 +40,4 @@
   width: 100%;
   margin: 0 auto;
 }
+ */

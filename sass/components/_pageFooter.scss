@@ -1,6 +1,122 @@
 .footer {
   background: $introductionBackgroundColor;
   &__wrapper {
+    text-align: center;
+  }
+  &__contacts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  &__socialmedia-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 20px;
+    fill: $backgroundThird;
+  }
+  &__socialmedia-item {
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__socialmedia-item:hover,
+  &__socialmedia-item:focus {
+    background-color: $brandColor;
+  }
+  &__socialmedia-header {
+    color: $backgroundThird;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+}
+
+.address {
+  margin-top: 20px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  &__item {
+    font-style: normal;
+    line-height: 1.7;
+    color: $backgroundThird;
+  }
+  &__link {
+    font-style: normal;
+    text-align: center;
+    font-family: $fontPrimary;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:focus,
+  &__link:hover {
+    color: $brandColor;
+    fill: $brandColor;
+  }
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+  align-items: center;
+  &__header {
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: $backgroundThird;
+  }
+  &__subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    padding: 15px 16px 15px 16px;
+    border: 1px solid #ffffff4d;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    color: #ffffff99;
+    background-color: $introductionBackgroundColor;
+    width: 358px;
+    margin-bottom: 20px;
+  }
+  &__button {
+    padding: 10px 28px 10px 42px;
+    display: flex;
+    align-items: center;
+    color: $backgroundThird;
+    background-color: $brandColor;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    border-radius: 4px;
+  }
+  &__icon {
+    fill: rgba(255, 255, 255, 1);
+    background-color: $brandColor;
+  }
+}
+/* .footer {
+  background: $introductionBackgroundColor;
+  &__wrapper {
     display: flex;
     align-items: baseline;
   }
@@ -114,3 +230,4 @@
     background-color: $brandColor;
   }
 }
+ */
