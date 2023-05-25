@@ -1,0 +1,124 @@
+.menu-toggle {
+  background: none;
+  border: none;
+}
+
+.hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100vw;
+  height: 100vh;
+  transform: translateY(-100%);
+  background-color: $backgroundThird;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-open {
+    transform: translateY(0);
+  }
+
+  & .menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+  &__icon {
+    fill: $fontMAINcolor;
+    padding: 12px 7px;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon:hover {
+    fill: $brandColor;
+  }
+
+  &__icon--close {
+    fill: $fontMAINcolor;
+    /*  transition-property: transform;
+    transition-duration: 1000ms;
+    transition-timing-function: ease; */
+  }
+
+  &__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $backgroundThird;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    overflow-y: auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 47px;
+    color: $fontMAINcolor;
+  }
+  &__link:hover {
+    color: $brandColor;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tel {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  &__tel--link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: $brandColor;
+  }
+
+  &__mail {
+    margin-bottom: 64px;
+  }
+  &__mail--link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: $paragrafColor;
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__socials--item {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+
+  &__socials--item:last-child {
+    border: none;
+  }
+  &__socials--link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $brandColor;
+  }
+}
