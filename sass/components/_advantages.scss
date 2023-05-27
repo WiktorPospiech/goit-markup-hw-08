@@ -30,6 +30,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    &__header {
+      text-align: left;
+    }
     &__item {
       width: 354px;
     }

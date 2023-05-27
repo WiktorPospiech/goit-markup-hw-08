@@ -169,8 +169,8 @@
     &__section {
       display: flex;
       justify-content: space-between;
-      padding: (24px 227px 25px 215px);
-      justify-content: space-between;
+      padding-top: 24px;
+      padding-bottom: 25px;
       align-items: center;
     }
     &__navigation {

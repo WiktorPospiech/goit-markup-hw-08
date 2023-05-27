@@ -3,6 +3,9 @@
   &__wrapper {
     text-align: center;
   }
+  &__socialmedia {
+    margin-top: 60px;
+  }
   &__contacts {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -38,11 +41,12 @@
 }
 
 .address {
-  margin-top: 20px;
+  font-style: normal;
   &__list {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+    margin-top: 20px;
   }
   &__item {
     font-style: normal;
@@ -119,6 +123,10 @@
     padding: 60px 89px 60px 76px;
     display: flex;
     column-gap: 144px;
+    align-items: baseline;
+  }
+  .footer__socialmedia {
+    margin-top: 0;
   }
   .address {
     font-style: normal;
@@ -130,6 +138,9 @@
   .logo {
     margin: 0;
   }
+  .newsletter {
+    padding-top: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer {
@@ -139,13 +150,12 @@
       align-items: baseline;
     }
     &__contacts {
-      align-items: center;
-      padding-top: 60px;
-      padding-bottom: 60px;
-      margin-right: 70px;
+      align-items: baseline;
+      padding: 60px 70px 60px 0;
+      column-gap: 70px;
     }
     &__socialmedia {
-      margin-right: 78px;
+      margin-right: 0;
     }
 
     &__socialmedia-list {
