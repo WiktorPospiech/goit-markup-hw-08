@@ -27,77 +27,9 @@
     color: #fff;
   }
 }
-/* .header {
-  border-bottom: 1px solid #ececec;
-
-  &__section {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__navigation {
-    display: flex;
-    align-items: center;
-  }
-}
-.logo {
-  margin-right: 93px;
-  font-family: $fontSecondary;
-  font-weight: 700;
-  font-size: 26px;
-  color: $brandColor;
-  line-height: 1.2px;
-  letter-spacing: 0.03em;
-  &--dark {
-    color: #000;
-  }
-  &--light {
-    color: #fff;
-  }
-} */
 .menu {
   display: none;
 }
-/* .menu {
-  column-gap: 46px;
-  display: flex;
-  justify-content: space-between;
-  &__item {
-    position: relative;
-  }
-  &__link {
-    display: inline-block;
-    color: $fontMAINcolor;
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    font-family: $fontPrimary;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-  }
-  &--active::after,
-  &--bordered:hover::after,
-  &--bordered:focus::after {
-    position: absolute;
-    right: 0;
-    margin-top: 37px;
-    content: "";
-    width: 100%;
-    border-bottom: solid 4px #2196f3;
-    border-radius: 4px;
-  }
-  &__link:focus,
-  &__link:hover {
-    color: $brandColor;
-    fill: $brandColor;
-  }
-} */
-
 .contacts {
   column-gap: 50px;
   &--hidden {
@@ -126,30 +58,203 @@
     margin-right: 10px;
   }
 }
-/* .contacts {
-  column-gap: 50px;
-  display: flex;
-  justify-content: space-between;
-  &__link {
-    font-family: $fontPrimary;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    fill: $paragrafColor;
-    color: $paragrafColor;
-    display: flex;
-    align-items: center;
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+
+    &__section {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 21px;
+      padding-bottom: 21px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__navigation {
+      display: flex;
+      align-items: center;
+    }
   }
-  &__link:focus,
-  &__link:hover {
+  .logo {
+    margin-right: 93px;
+    font-family: $fontSecondary;
+    font-weight: 700;
+    font-size: 26px;
     color: $brandColor;
-    fill: $brandColor;
+    line-height: 1.2px;
+    letter-spacing: 0.03em;
+    &--dark {
+      color: #000;
+    }
+    &--light {
+      color: #fff;
+    }
   }
-  &__icon {
-    margin-right: 10px;
+  .menu {
+    display: flex;
+    column-gap: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 83px;
+    &__item {
+      position: relative;
+    }
+    &__link {
+      display: inline-block;
+      color: $fontMAINcolor;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: $fontPrimary;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+    &--active::after,
+    &--bordered:hover::after,
+    &--bordered:focus::after {
+      position: absolute;
+      right: 0;
+      margin-top: 46px;
+      content: "";
+      width: 100%;
+      border-bottom: solid 4px #2196f3;
+      border-radius: 4px;
+    }
+    &__link:focus,
+    &__link:hover {
+      color: $brandColor;
+      fill: $brandColor;
+    }
   }
-} */
+  .menu-toggle {
+    display: none;
+  }
+  .contacts {
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__link {
+      font-family: $fontPrimary;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      fill: $paragrafColor;
+      color: $paragrafColor;
+      display: flex;
+      align-items: center;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:focus,
+    &__link:hover {
+      color: $brandColor;
+      fill: $brandColor;
+    }
+    &__icon {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+
+    &__section {
+      display: flex;
+      justify-content: space-between;
+      padding: (24px 227px 25px 214px);
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__navigation {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .logo {
+    margin-right: 93px;
+    font-family: $fontSecondary;
+    font-weight: 700;
+    font-size: 26px;
+    color: $brandColor;
+    line-height: 1.2px;
+    letter-spacing: 0.03em;
+    &--dark {
+      color: #000;
+    }
+    &--light {
+      color: #fff;
+    }
+  }
+  .menu {
+    column-gap: 46px;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      position: relative;
+    }
+    &__link {
+      display: inline-block;
+      color: $fontMAINcolor;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: $fontPrimary;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+    &--active::after,
+    &--bordered:hover::after,
+    &--bordered:focus::after {
+      position: absolute;
+      right: 0;
+      margin-top: 37px;
+      content: "";
+      width: 100%;
+      border-bottom: solid 4px #2196f3;
+      border-radius: 4px;
+    }
+    &__link:focus,
+    &__link:hover {
+      color: $brandColor;
+      fill: $brandColor;
+    }
+  }
+  .contacts {
+    column-gap: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__link {
+      font-family: $fontPrimary;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      fill: $paragrafColor;
+      color: $paragrafColor;
+      display: flex;
+      align-items: center;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:focus,
+    &__link:hover {
+      color: $brandColor;
+      fill: $brandColor;
+    }
+    &__icon {
+      margin-right: 10px;
+    }
+  }
+}

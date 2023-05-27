@@ -19,23 +19,30 @@
     border: 1px solid $brandColor;
   }
 }
-/* .clients__list {
-  display: flex;
-  justify-content: space-between;
-  fill: $iconsFilling;
-  gap: 30px;
-}
-.clients__icon {
-  border: 1px solid $iconsFilling;
-  border-radius: 4%;
-  padding: 17.71px 32px 14.25px 32px;
-  transition-property: border, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    fill: $brandColor;
-    border: 1px solid $brandColor;
+@media screen and (min-width: 768px) {
+  .client__list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
- */
+@media screen and (min-width: 768px) {
+  .clients__list {
+    display: flex;
+    justify-content: space-between;
+    fill: $iconsFilling;
+    gap: 30px;
+  }
+  .clients__icon {
+    border: 1px solid $iconsFilling;
+    border-radius: 4%;
+    padding: 17.71px 32px 14.25px 32px;
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $brandColor;
+      border: 1px solid $brandColor;
+    }
+  }
+}
