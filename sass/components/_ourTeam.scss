@@ -63,6 +63,7 @@
     background: $backgroundSecondary;
     &__list {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: space-between;
       text-align: center;
     }

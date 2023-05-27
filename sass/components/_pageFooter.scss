@@ -131,7 +131,7 @@
     margin: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer {
     background: $introductionBackgroundColor;
     &__wrapper {
@@ -139,12 +139,12 @@
       align-items: baseline;
     }
     &__contacts {
+      align-items: center;
       padding-top: 60px;
       padding-bottom: 60px;
       margin-right: 70px;
     }
     &__socialmedia {
-      padding-top: 72px;
       margin-right: 78px;
     }
 
@@ -178,7 +178,7 @@
   }
 
   .address {
-    margin-top: 20px;
+    text-align: left;
     &__list {
       display: flex;
       flex-direction: column;
@@ -215,9 +215,11 @@
     }
     &__subscription {
       display: flex;
+      flex-direction: row;
     }
     &__input {
       font-size: 16px;
+      margin-bottom: 0;
       font-weight: 400;
       letter-spacing: 0.03em;
       border-radius: 4px;

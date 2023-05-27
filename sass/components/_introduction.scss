@@ -53,9 +53,12 @@
 
 @media screen and (min-width: 1200px) {
   .introduction__wrapper {
-    padding: 200px 452px;
+    padding: 200px 430px;
   }
   .introduction__slogan {
     font-size: 44px;
+  }
+  .introduction__img {
+    background-image: url(../images/sloganBackground.jpg);
   }
 }
