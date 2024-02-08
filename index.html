@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>Wyczesani Godlewska</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,127 +25,21 @@
   <body>
     <header class="header">
       <div class="container header__section">
-        <nav class="header__navigation">
-          <a
-            class="logo"
-            href="index.html"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Web<span class="logo--dark">Studio</span>
-          </a>
-          <ul class="menu">
-            <li class="menu__item">
-              <a
-                class="menu__link menu--bordered menu--active"
-                href="index.html"
-                >Agencja</a
-              >
-            </li>
-            <li class="menu__item">
-              <a class="menu__link menu--bordered" href="portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="menu__item">
-              <a class="menu__link menu--bordered" href="index.html">Kontakt</a>
-            </li>
-          </ul>
+        <img
+          class="header__logo"
+          src="/images/Elwira_mini.jpg"
+          alt="logo salonu"
+        />
+        <svg class="header__call">
+          <use href="/images/icons.svg#icon-smartphone-1"></use>
+        </svg>
+        <nav>
+          <button class="modal__open" type="button">
+            <svg class="modal__icon">
+              <use href="/images/icons.svg#icon-menu-24px"></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="contacts contacts--hidden">
-          <li>
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16px" height="12px">
-                <use href="images/icons.svg#icon-envelope-1"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contacts__link" href="tel:+1212-772-4150">
-              <svg class="contacts__icon" width="10" height="16px">
-                <use href="images/icons.svg#icon-smartphone-1"></use>
-              </svg>
-              ++1 212-772-4150</a
-            >
-          </li>
-        </ul>
-
-        <!-- MENU MOBILE -->
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="hamburger__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu-24px"></use>
-          </svg>
-        </button>
-        <!-- /MENU MOBILE -->
-      </div>
-
-      <div class="hamburger js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-          <svg
-            class="hamburger__icon hamburger__icon--close"
-            width="40"
-            height="40"
-          >
-            <use href="./images/icons.svg#icon-close-40px"></use>
-          </svg>
-        </button>
-
-        <div class="hamburger__content">
-          <ul class="hamburger__list">
-            <li class="hamburger__item">
-              <a href="index.html" class="hamburger__link">Agencja</a>
-            </li>
-            <li class="hamburger__item">
-              <a href="portfolio.html" class="hamburger__link">Portfolio</a>
-            </li>
-            <li class="hamburger__item">
-              <a href="#" class="hamburger__link">Kontakt</a>
-            </li>
-          </ul>
-          <div class="hamburger__contacts">
-            <span class="hamburger__tel">
-              <a
-                href="tel:+48111111111"
-                class="hamburger__tel hamburger__tel--link"
-                >+48 111 111 111</a
-              >
-            </span>
-            <span class="hamburger__mail">
-              <a
-                href="mailto:info@devstudio.com"
-                class="hamburger__mail hamburger__mail--link"
-                >info@devstudio.com</a
-              >
-            </span>
-            <ul class="hamburger__socials">
-              <li class="hamburger__socials hamburger__socials--item">
-                <a class="hamburger__socials hamburger__socials--link" href="#"
-                  >Instagram</a
-                >
-              </li>
-              <li class="hamburger__socials hamburger__socials--item">
-                <a class="hamburger__socials hamburger__socials--link" href="#"
-                  >Twitter</a
-                >
-              </li>
-              <li class="hamburger__socials hamburger__socials--item">
-                <a class="hamburger__socials hamburger__socials--link" href="#"
-                  >Facebook</a
-                >
-              </li>
-              <li class="hamburger__socials hamburger__socials--item">
-                <a class="hamburger__socials hamburger__socials--link" href="#"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </header>
     <main>
@@ -153,68 +47,16 @@
       <section class="section introduction">
         <div class="container introduction__wrapper introduction__img">
           <h1 class="introduction__slogan">
-            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+            Życie nie jest idealne, ale Twoje włosy mogą być!
           </h1>
-          <button class="introduction__button" data-modal-open type="button">
-            Zamów usługę
-          </button>
         </div>
       </section>
       <!--introduction-->
 
-      <!--advantages-->
-      <section class="section">
-        <div class="container">
-          <ul class="advantages">
-            <li class="advantages__item">
-              <svg class="advantages__icon" width="270px" height="120px">
-                <use href="./images/icons.svg#icon-antenna-1-1"></use>
-              </svg>
-              <h3 class="advantages__header">LOREM IPSUM</h3>
-              <p class="advantages__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <svg class="advantages__icon" width="270px" height="120px">
-                <use href="./images/icons.svg#icon-clock-1-1"></use>
-              </svg>
-              <h3 class="advantages__header">LOREM IPSUM</h3>
-              <p class="advantages__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <svg class="advantages__icon" width="270px" height="120px">
-                <use href="./images/icons.svg#icon-diagram-1-1"></use>
-              </svg>
-              <h3 class="advantages__header">LOREM IPSUM</h3>
-              <p class="advantages__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <svg class="advantages__icon" width="270px" height="120px">
-                <use href="./images/icons.svg#icon-astronaut-1-1"></use>
-              </svg>
-              <h3 class="advantages__header">LOREM IPSUM</h3>
-              <p class="advantages__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--advantages-->
-
       <!--ourService-->
       <section class="section section--no-padding section--hidden">
         <div class="container">
-          <h2 class="section__header">Czym się zajmujemy</h2>
+          <h2 class="section__header">Usługi</h2>
           <ul class="OurService__list">
             <li class="OurService__item">
               <img
@@ -224,7 +66,7 @@
                 height="294"
                 width="370"
               />
-              <p class="OurService__text">APLIKACJE INTERNETOWE</p>
+              <p class="OurService__text">WŁOSY MĘSKE</p>
             </li>
             <li class="OurService__item">
               <img
@@ -234,17 +76,7 @@
                 height="294"
                 width="370"
               />
-              <p class="OurService__text">APLIKACJE MOBILNE</p>
-            </li>
-            <li class="OurService__item">
-              <img
-                class="OurService__img"
-                src="images/box3.jpg"
-                alt="color palette shown on a tablet"
-                height="294"
-                width="370"
-              />
-              <p class="OurService__text">ROZWIĄZANIA GRAFICZNE</p>
+              <p class="OurService__text">WŁOSY DAMSKIE</p>
             </li>
           </ul>
         </div>
@@ -254,160 +86,21 @@
       <!--ourTeam-->
       <section class="team section">
         <div class="container">
-          <h2 class="section__header">Nasz zespół</h2>
+          <h2 class="section__header">O mnie</h2>
           <ul class="team__list">
-            <li class="team__item">
-              <img
-                alt="ChristopherWalker"
-                src="./images/KylieEvans.jpg"
-                srcset="
-                  ./images/ChristopherWalker.jpg     450w,
-                  ./images/ChristopherWalker@2x.jpg  900w,
-                  ./images/ChristopherWalker@3x.jpg 1350w
-                "
-                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
-              <h3 class="team__header">Christopher Walker</h3>
-              <p class="team__text">Product Designer</p>
-              <div class="team__socialmediaIcons">
-                <ul class="team__socialmediaIcons__list">
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-twitter-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-facebook-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-linkedin-1-1"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team__item">
-              <img
-                alt="Kylie Evans"
-                src="./images/KylieEvans.jpg"
-                srcset="
-                  ./images/KylieEvans.jpg     450w,
-                  ./images/KylieEvans@2x.jpg  900w,
-                  ./images/KylieEvans@3x.jpg 1350w
-                "
-                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
-              <h3 class="team__header">Kylie Evans</h3>
-              <p class="team__text">Frontend Developer</p>
-              <div class="team__socialmediaIcons">
-                <ul class="team__socialmediaIcons__list">
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-twitter-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-facebook-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-linkedin-1-1"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team__item">
-              <img
-                alt="RyanHarris"
-                src="./images/RyanHarris.jpg"
-                srcset="
-                  ./images/RyanHarris.jpg     450w,
-                  ./images/RyanHarris@2x.jpg  900w,
-                  ./images/RyanHarris@3x.jpg 1350w
-                "
-                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
-              <h3 class="team__header">Ryan Harris</h3>
-              <p class="team__text">Marketing</p>
-              <div class="team__socialmediaIcons">
-                <ul class="team__socialmediaIcons__list">
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-twitter-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-facebook-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-linkedin-1-1"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team__item">
-              <img
-                alt="TylerMoore"
-                src="./images/TylerMoore.jpg"
-                srcset="
-                  ./images/TylerMoore.jpg     450w,
-                  ./images/TylerMoore@2x.jpg  900w,
-                  ./images/TylerMoore@3x.jpg 1350w
-                "
-                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
-              <h3 class="team__header">Tyler Moore</h3>
-              <p class="team__text">UI Designer</p>
-              <div class="team__socialmediaIcons">
-                <ul class="team__socialmediaIcons__list">
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-twitter-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-facebook-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="team__socialmediaIcons__item">
-                    <svg width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-linkedin-1-1"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </li>
+            <p>
+              Cześć! Mam na imię Elwira i jestem związana z zawodem fryzjerki od
+              6 lat. Fryzjerstwo to też moja pasja. Ukończyłam szkołę
+              fryzjerską, po której stawiałam pierwsze kroki we fryzjerstwie
+              jako stażystka i pracownik jednego z salonów w Olsztynie.
+              Następnym krokiem w mojej karierze zawodowej było rozpoczęcie
+              działalności na własną rękę i otwarcie swojego salonu, który
+              prowadzę od 3 lat. Moim konikiem jest wykonywanie koloryzacji :D
+              Rozwijam się również w kierunku fryzjerstwa dziecięcego i
+              męskiego. Moim marzeniem i planem na przyszłość jest stworzenie
+              miejsca, które będziecie miło wspominać i do którego będziecie
+              chętnie wracać :D
+            </p>
           </ul>
         </div>
       </section>
@@ -416,7 +109,7 @@
       <!--clients-->
       <section class="section">
         <div class="container">
-          <h2 class="section__header">Nasi klienci</h2>
+          <h2 class="section__header">Galeria</h2>
           <ul class="clients__list">
             <li class="clients__icon">
               <svg width="106px" height="60px">
@@ -457,31 +150,21 @@
       <div class="container footer__wrapper">
         <div class="footer__contacts">
           <address class="address">
-            <a
-              class="logo"
-              href="index.html"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Web<span class="logo--light">Studio</span>
-            </a>
+            <p>WYCZESANI Studio fryzur Elwira Godlewska</p>
             <ul class="address__list">
-              <li class="address__item">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li>
-                <a class="address__link" href="tel:+1212-772-4150"
-                  >++1 212-772-4150</a
-                >
+              <li class="address__item">
+                Plac Pułaskiego 7/10/2 10-515 Olsztyn
               </li>
-              <li class="contacts">
-                <a class="address__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li>
+                <a class="address__link" href="tel: +48 695 750 778"
+                  >+48 695 750 778</a
                 >
               </li>
             </ul>
           </address>
 
           <div class="footer__socialmedia">
-            <h3 class="footer__socialmedia-header">DOŁĄCZ DO NAS</h3>
+            <h3 class="footer__socialmedia-header">ZNAJDŹ MNIE NA:</h3>
             <ul class="footer__socialmedia-list">
               <li class="footer__socialmedia-item">
                 <svg width="20px" height="20px">
@@ -505,26 +188,6 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="newsletter">
-          <h3 class="newsletter__header">ZAPISZ SIĘ DO NEWSLETTERA</h3>
-          <form class="newsletter__subscription" name="sign_up_for_newsletter">
-            <input
-              class="newsletter__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <button class="newsletter__button" type="submit">
-              Zapisz się<svg
-                class="newsletter__icon"
-                height="24px"
-                width="24px"
-              >
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
         </div>
       </div>
     </footer>
