@@ -30,12 +30,22 @@
           src="/images/Elwira_mini.jpg"
           alt="logo salonu"
         />
-        <svg class="header__call">
-          <use href="/images/icons.svg#icon-smartphone-1"></use>
-        </svg>
+        <div class="header__call__wrapper">
+          <svg class="header__call">
+            <use href="/images/icons.svg#icon-smartphone-1"></use>
+          </svg>
+        </div>
         <nav>
-          <button class="modal__open" type="button">
-            <svg class="modal__icon">
+          <div class="header__menu">
+            <ul>
+              <li>usługi</li>
+              <li>o mnie</li>
+              <li>galeria</li>
+              <li>kontakt</li>
+            </ul>
+          </div>
+          <button class="header__modal__open" type="button">
+            <svg class="header__modal__open__icon">
               <use href="/images/icons.svg#icon-menu-24px"></use>
             </svg>
           </button>
@@ -59,24 +69,24 @@
           <h2 class="section__header">Usługi</h2>
           <ul class="OurService__list">
             <li class="OurService__item">
-              <img
-                class="OurService__img"
-                src="images/box1.jpg"
-                alt="hands on the keyboard and coding effect on a screen"
-                height="294"
-                width="370"
-              />
-              <p class="OurService__text">WŁOSY MĘSKE</p>
+              <figure>
+                <img
+                  class="OurService__img"
+                  src="./images/image00011.jpg"
+                  alt="męska fryzura"
+                />
+                <figcaption class="label">WŁOSY MĘSKIE</figcaption>
+              </figure>
             </li>
             <li class="OurService__item">
-              <img
-                class="OurService__img"
-                src="images/box2.jpg"
-                alt="hands holding a phone and a laptop in the background"
-                height="294"
-                width="370"
-              />
-              <p class="OurService__text">WŁOSY DAMSKIE</p>
+              <figure>
+                <img
+                  class="OurService__img"
+                  src="./images/image00003.jpg"
+                  alt="damska fryzura"
+                />
+                <figcaption class="label">WłOSY DAMSKIE</figcaption>
+              </figure>
             </li>
           </ul>
         </div>

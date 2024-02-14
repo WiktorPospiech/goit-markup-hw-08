@@ -4,7 +4,7 @@
   &__section {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px 10px 15px;
+    padding: 5px 10px 5px 5px;
     justify-content: space-between;
     align-items: center;
   }
@@ -12,24 +12,28 @@
     display: flex;
     align-items: center;
   }
-}
-.logo {
-  font-family: $fontSecondary;
-  font-weight: 700;
-  font-size: 26px;
-  color: $brandColor;
-  line-height: 1.2px;
-  letter-spacing: 0.03em;
-  &--dark {
-    color: #000;
+  &__logo {
+    max-width: 200px;
   }
-  &--light {
-    color: #fff;
+  &__call {
+    width: 50px;
+    height: 30px;
+  }
+  &__call__wrapper {
+    padding-left: 95px;
+  }
+  &__modal__open {
+    background-color: white;
+  }
+  &__modal__open__icon {
+    width: 40px;
+    height: 50px;
+  }
+  &__menu {
+    display: none;
   }
 }
-.menu {
-  display: none;
-}
+
 .contacts {
   column-gap: 50px;
   &--hidden {
@@ -74,21 +78,6 @@
     &__navigation {
       display: flex;
       align-items: center;
-    }
-  }
-  .logo {
-    margin-right: 93px;
-    font-family: $fontSecondary;
-    font-weight: 700;
-    font-size: 26px;
-    color: $brandColor;
-    line-height: 1.2px;
-    letter-spacing: 0.03em;
-    &--dark {
-      color: #000;
-    }
-    &--light {
-      color: #fff;
     }
   }
   .menu {
@@ -176,21 +165,6 @@
     &__navigation {
       display: flex;
       align-items: center;
-    }
-  }
-  .logo {
-    margin-right: 93px;
-    font-family: $fontSecondary;
-    font-weight: 700;
-    font-size: 26px;
-    color: $brandColor;
-    line-height: 1.2px;
-    letter-spacing: 0.03em;
-    &--dark {
-      color: #000;
-    }
-    &--light {
-      color: #fff;
     }
   }
   .menu {
